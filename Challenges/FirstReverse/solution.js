@@ -1,10 +1,14 @@
 function FirstReverse(str) { 
-    str.split("").reverse().join("");        
+  var newString = "";
+  for (var i = str.length - 1; i >= 0; i--) {
+      newString += str[i];
+  }
+  return newString        
   }
    
   var str1 = "TorontoITSolutions";
   var str2 = "Toronto IT Soltuions";
-  // keep this function call here 
+  
   console.log(str1);
   console.log(str2);
   
